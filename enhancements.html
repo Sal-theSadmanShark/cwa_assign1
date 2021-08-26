@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Enhancements Used"/>
+	<meta name="keywords"	 content="HTML, CSS, JavaScript"/>
+	<meta name="author" 	 content="MD Salim Sadman"/>
+    <title>Enhancements</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <h1 id="compName">
+            <a href="index.html" title="The leading Software Development Firm"><img id="complogo" src="images/cherry.png" alt="cherry_icon">Cherry</a>
+        </h1>
+            <ul id="menubar">
+                <li class="menuButton" ><a href="index.html">Home</a></li>
+                <li class="menuButton" ><a href="jobs.html">Jobs</a></li>
+                <li class="menuButton" ><a href="apply.html">Apply</a></li>
+                <li class="menuButton" ><a href="about.html">About</a></li>
+                <li class="menuButton" ><a href="enhancements.html">Enhancements</a></li>
+            </ul>
+    </nav>
+    <div id="blankspace"></div>
+
+    <Section id="logoSection" class="responsive">
+		Enhancements
+	</Section>
+       
+    <section class="bookview responsive">
+        <h2>Fixed Navbar</h2>
+        <article class="leftText">
+            The navigation bar is fixed on the top of the screen. It has matching colors with the custom scrollbar.
+            The navbar buttons have a hover animation and they are responsive to viewport width.
+            The companny name and logo is kept on all pages to maintain consistency.
+            The colors and size of each navbar elements was carefully picked, a lot of experimentation was done to pick a non intrusive color.
+            The width of buttons and size of text is manually defined to resize according to the viewport.
+        </article>
+        <aside>
+            <ul>
+                <li>Fixed position on top</li>
+                <li>Custom Scrollbar</li>
+                <li>Company logo with Icon</li>
+                <li>Thin and unintrusive Design</li>
+                <li>Animated Buttons</li>
+            </ul>
+        </aside>
+    </section>
+
+    <section class="bookview responsive">
+        <h2>Fully Responsive Webpage</h2>
+        <article class="leftText" >
+            This webpage was designed to be viewable on mobile devices.
+            Used css <em>media</em> rule to  define custom attributes for smaller screens.
+            To maintain consistency, flexbox is used for all responsive element containers. Only the article aside pairs use float.
+            The <em>Home</em> page changes layout on a mobile screen but the other pages mostly retain its structure.
+            Manually defined attributes for a lot of elements to make the texts and photos appear more natural on a mobile device.
+            Used devtools to emulate phone screens and it was optimised for for modern mobile phone screens.
+            This page was not exclicitly optimised for tablets, i.e., separate size values were not defined for tablet screens. However, it does look okay on Ipad screen layouts.
+        </article>
+
+        <aside>
+            <ul>
+                <li>Optimised for mobile screens</li>
+                <li>Flexbox layout</li>
+                <li>Viewport specific css values</li>
+                <li>No overflow or disproportonate elements</li>
+                <li>Variable image size</li>
+            </ul>
+        </aside>
+    </section>
+
+    <section class="bookView responsice">
+        <h2>Other Enhancements</h2>
+        <p class="leftText" >
+            Some other enhancements which are worth mentioning:
+        </p>
+        <ul class="leftText">
+            <li>Different company logos and names, one for the core company and 3 other for its clietns</li>
+            <li>Usage of soft colors to match the company theme</li>
+            <li>Usage of ID's and Classes to group css styles</li>
+            <li>Stock photos on the homepage</li>
+            <li>Source of the photos shown on tooltips</li>
+            <li>consistent header, footer and page layout across all files</li>
+            <li>Excluding the homepage, other pages don't use any photos to maintain a clean and minimalistic look</li>
+        </ul>
+    </section>
+
+    <footer id="footbar">
+        <ul >
+            <li> <a class="footlink" href="#about">About</a></li>
+            <li> <a class="footlink" href="dud.html">Contract</a></li>
+            <li> <a class="footlink" href="dud.html">Careers</a></li>
+            <li> <a class="footlink" href="dud.html">Scoial Media</a></li>
+            <li> <a class="footlink" href="dud.html">Privacy Policy</a> </li>
+            <li> <a class="footlink" href="dud.html">Terms & Conditions</a> </li>
+            <li> <a class="footlink" href="dud.html">Cookie Policy</a> </li>
+        </ul>
+       
+        <a href="about.html" id="author">
+            Author: MD Salim Sadman
+        </a>
+    </footer>
+</body>
+</html>
