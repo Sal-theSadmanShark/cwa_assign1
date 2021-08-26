@@ -349,9 +349,7 @@ home.html
 /* 
 apply.html styles
  */
-form{
-    padding: 10vh 0;
- }
+form{padding: 10vh 0;}
 #jobApplication{
     width: fit-content;
     margin: auto;
@@ -408,19 +406,28 @@ td{
 
 /* Optimization for small screens */
 @media screen and (max-width:460px) {
-    article,aside,ul,ol,li,p,label,a, textarea, select,input,option,Figure,dl{
+    article,aside,ul,ol,li,p,label,a, textarea, select,input,option,Figure,dt,dd{
         font-size: 0.7rem;
         word-spacing: 0;
     }
-    h2{
-        font-size: 1.3rem;
-    }
+    h2{font-size: 1.3rem;}
+    h3{font-size: 1.1rem;}
+    h4{font-size: 0.9rem;}
+    strong{font-size: 0.8rem;}
+    em{font-size: 0.6rem;}
     #blankspace{
         margin: 4vh 0;
     }
+    .bookview > article{
+        padding: 0 0 0 10px;
+        margin: 0;
+        max-width: 45%;
+    }
     .bookview > aside{
         border: 0;
-        width: 65%;
+        padding: 0 10px 0 0;
+        margin: 0;
+        min-width: 35%;
     }
     #compName a{
         font-size: 1.1rem;
