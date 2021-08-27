@@ -54,8 +54,8 @@
 				<input type="text" name="birthdate" size="6" required="required" placeholder="dd/mmyyyy" pattern="^\d{1,2}[/]\d{1,2}[/]\d{2,4}$"/>
 			</label>
 		</p>	
-		<div>
-			<p>Gender:</p>
+		<fieldset id="gender">
+			<legend>Gender</legend>
 			<label>
 				<input type="radio" name="gender" value="male" required="required"/>
 				Male
@@ -68,7 +68,7 @@
 				<input type="radio" name="gender" value="other" required="required"/>
 				Other
 			</label>
-		</div>
+		</fieldset>
 		<p>
 			<label for="street">Street Address <br>
 				<input id="street" type="text" name="street" maxlength="40" size="40" required="required">
