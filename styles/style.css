@@ -268,7 +268,7 @@ home.html
 #footbar{ 
     margin:50px 0 0 0;
     padding: 0;
-    background: #Fa3a5a;
+    background: rgb(238, 176, 101);
 }
 #footbar ul{
     margin: 0;
@@ -281,7 +281,7 @@ home.html
 }
 .footlink{
     font-size: 0.8rem;
-    color: rgb(62, 62, 202);
+    color: rgb(73, 73, 190);
     word-spacing: 0;
     padding: 5px;
 }
@@ -291,22 +291,24 @@ home.html
 #footbar p{
     color: black;
     margin: 20px auto;
-    font-size: 0.6rem;
+    font-family: serif;
+    font-size: 0.8rem;
     word-spacing: 0.2rem;
-    letter-spacing: 0.1rem;
     text-align: center;
 }
 #author{
     display: block;
-    font-size: 0.9rem;
+    font-size: 1rem;
     word-spacing: 0.1rem;
     letter-spacing: 0.1rem;
     font-family: monospace;
-    color: rgb(58, 1, 58);
+    color: rgb(2, 1, 0);
     text-align: right;
+    margin-top: 2%;
+    border-top: 1px dashed #000;
 }
 #author:hover{
-    color: rgb(0, 126, 0);
+    color: rgb(25, 0, 255);
 }
 /* ------------------------------------------------------------------------------------------------ */
 /*
@@ -363,7 +365,22 @@ form{padding: 10vh 0;}
     border: 1px solid gray;
     margin-right: 55%;
 }
-
+/* Usage of animation */
+.animated-button{
+    /* border:1px solid; */
+    border-radius: 5px;
+    background-color: transparent;
+    margin:1%;
+    transition: all .2s ease-in-out;
+}
+.animated-button:hover{
+    transform: scale(1.1);
+    background:#3afa5a;
+}
+/* usagne of pseudo selectors */
+.animated-button:last-child:hover{
+    background: #Fa3a5a;
+}
 /* ------------------------------------------------------------------------------------------------ */
 
 /* 
@@ -418,7 +435,7 @@ td{
     h2{font-size: 1.3rem;}
     h3{font-size: 1.1rem;}
     h4{font-size: 0.9rem;}
-    strong{font-size: 0.8rem;}
+    strong, #author{font-size: 0.8rem;}
     em{font-size: 0.6rem;}
     .leftText, .middleText, .rightText{max-width: 90%;}
     #blankspace{
@@ -486,6 +503,7 @@ td{
         align-self: center;
         font-size: 1rem;
     }
+    .footlink{padding:0 12px;}
     #photo{
         width: 60%;
     }
@@ -505,4 +523,8 @@ td{
         font-size: 1rem;
     }
     #gender legend{ font-size: 0.7rem;}
+    form{
+        padding: 1%;
+        max-width: 90%;
+    }
 }
