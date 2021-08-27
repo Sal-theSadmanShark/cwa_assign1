@@ -116,7 +116,7 @@ home.html
     padding: 0px;
     text-align: center;
     border: 1px solid #Fa3a5a;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 .menuButton > a{
     font: 0.8rem 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial;
@@ -198,6 +198,7 @@ home.html
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: 10% 0;
 }
 .staffSection > h3{
     flex: 100%;
@@ -415,6 +416,7 @@ td{
     h4{font-size: 0.9rem;}
     strong{font-size: 0.8rem;}
     em{font-size: 0.6rem;}
+    .leftText, .middleText, .rightText{max-width: 90%;}
     #blankspace{
         margin: 4vh 0;
     }
@@ -455,26 +457,30 @@ td{
         height: 10rem;
     }
     #about > article{
-        padding: 0;
-       width: 100%;
+        padding: 0 0 0 5%;
+        width: 100%;
     }
     #about > aside{
-        padding: 0;
+        padding: 0 5% 0 0;
         width: 100%;
     }
     .example{
         width: 60%;
         height: 30%;
     }
-    .staffSection > p{
-        width: 100%;
-    }
+    .staffSection > p{max-width: 50%;}
     .staffSection > img{
         width: 13rem;
-        height:auto;
+        align-self: center;
     }
-    #clients h3{
-        padding: 0 5vh;
+    #clients h3{padding: 0 5vh;}
+    #clients > section{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    #pineapple, #strawberry, #winedows{
+        align-self: center;
+        font-size: 1rem;
     }
     #photo{
         width: 60%;
